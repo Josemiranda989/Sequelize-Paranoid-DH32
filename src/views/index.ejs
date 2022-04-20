@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
+  <body>
+    <figure>
+      <img src="/img/logo-DH.png" alt="Logo Digital House">
+    </figure>
+    <h1><%= title %></h1>
+    <p>Bienvenidos a <%= title %> </p>
+
+  <div class="alert alert-info" role="alert">
+    Solución con SoftDelete (Sequelize - Paranoid)
+  </div> 
+
+  <div class="alert alert-warning" role="alert">
+  NO OLVIDARSE DE AGREGAR LA COLUMNA deleted_at EN LA TABLA movies DE BASE DE DATOS movies_db con el datatype timestamp
+  </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://res.cloudinary.com/teepublic/image/private/s--WctEaics--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_000000,e_outline:48/co_000000,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1560888110/production/designs/5099786_0.jpg" alt="Card image cap">
+      <div class="card-body">
+        <a href="https://sequelize.org/docs/v6/core-concepts/paranoid" class="btn btn-primary btn-block">DOCUMENTACION</a>
+      </div>
+    </div>
+    
+  </body>
+</html>
